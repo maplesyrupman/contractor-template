@@ -1,0 +1,10 @@
+$theme-colors: (
+    $blue: #191970,
+    $orange: #E57106
+);
+
+:export {
+    @each $key, $value in $theme-colors {
+        #{unquote($key)}: $value;
+    }
+}

@@ -1,7 +1,10 @@
-import UnderConstruction from "../components/under-construction"
+import UnderConstruction from "../components/UnderConstruction"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <UnderConstruction />
+    <Layout>
+      <UnderConstruction />
+    </Layout>
   )
 }
