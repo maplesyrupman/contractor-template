@@ -5,7 +5,6 @@ import { useState } from "react"
 import styles from './nav.module.css'
 
 import Button from "../Button"
-import MobileNav from '../MobileNav'
 
 import { FiMenu, FiX } from "react-icons/fi"
 
@@ -21,7 +20,7 @@ export default function Nav({ home }) {
         <div>
             <nav className={styles.nav}>
                 <div className={styles.logoContainer}>
-                    <Image src={'/images/secondary-logo.png'} layout='responsive' width={240} height={95} />
+                    <Image src={'/images/alt-logo.svg'} width={240} height={95} />
                 </div>
 
                 <div className="flex items-center">
@@ -48,7 +47,7 @@ export default function Nav({ home }) {
                         </li>
                         <li>
 
-                            <Button type={'link'} colour={'primary'} content='Contact' />
+                            <Button type={'link'} colour={'primary'} content='Contact' size='large' />
 
                         </li>
                     </ul>

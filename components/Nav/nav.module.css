@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #191970;
+    z-index: 9;
 }
 
 .linkContainer {
@@ -28,6 +29,9 @@
     display: none;
 }
 
+.dropdownLinks {
+    display: none;
+}
 
 
 @media (max-width: 810px) {
