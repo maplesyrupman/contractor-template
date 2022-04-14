@@ -1,0 +1,13 @@
+.carousel {
+    /* position: relative;
+    display: flex; */
+    width: 100%;
+    overflow-x: hidden;
+    border: 4px solid red;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    border: 4px solid black;
+}
