@@ -11,15 +11,15 @@ export default function Home() {
     <Layout>
       <section className={styles.heroWrapper}>
         <div className={styles.hero}>
-          <div className={styles.heroImg}>
+          <div>
             <Image src={'/images/hero-img-overlay.jpg'} layout='responsive' height={82} width={175} />
           </div>
 
           <div className={styles.heroContent}>
             <div className={styles.heroTextContainer}>
-              <h1 className={styles.heroText}>Restoration.</h1>
-              <h1 className={styles.heroText}>Design.</h1>
-              <h1 className={styles.heroText}>Build.</h1>
+              <h1 className='pageHeading'>Restoration.</h1>
+              <h1 className='pageHeading'>Design.</h1>
+              <h1 className='pageHeading'>Build.</h1>
             </div>
             <div className={styles.heroBtns}>
               <Button type={'link'} colour={'primary'} content='Get a Quote' size='small' />
@@ -72,7 +72,13 @@ export default function Home() {
 
       </section>
 
-      <section>
+      <section className={styles.testsContainer}>
+        {/* <div>
+          <Image src='/images/testimonialBG-overlay.jpg' layout='responsive' width={3} height={2} />
+        </div> */}
+        <h2 className={`${styles.heading} ${styles.testHeading}`}>
+          Testimonials
+        </h2>
         <Testimonials />
       </section>
 

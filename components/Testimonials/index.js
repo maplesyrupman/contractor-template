@@ -3,13 +3,45 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import styles from './testimonials.module.css'
 
-const items = [
-    <div className="item" data-value="1">1</div>,
-    <div className="item" data-value="2">2</div>,
-    <div className="item" data-value="3">3</div>,
-    <div className="item" data-value="4">4</div>,
-    <div className="item" data-value="5">5</div>,
-];
+import { ImQuotesLeft, ImArrowRight2, ImArrowLeft2 } from 'react-icons/im'
+
+const testimonials = [
+    {
+        name: 'John Smith',
+        text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.'
+    },
+    {
+        name: 'Sarah Stade',
+        text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.'
+    },
+    {
+        name: 'Matthew Vettese',
+        text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.'
+    },
+    {
+        name: 'Alexandra Vesia',
+        text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.'
+    }
+]
+
+const items = testimonials.map((test, i) => {
+    return (
+        <div className={`item ${styles.testSlide}`} data-value={`${i}`}>
+
+            <span className={styles.quote}>
+                <ImQuotesLeft />
+            </span>
+            <p className={styles.testText}>
+                {test.text}
+            </p>
+            <h3 className={styles.name}>
+                {test.name}
+            </h3>
+
+        </div>
+    )
+})
+
 
 const navItem = (item, i) => {
     return <i key={i} onClick={() => this.Carousel.slideTo(i)} />;
@@ -20,6 +52,10 @@ function Carousel() {
         <AliceCarousel
             mouseTracking
             disableButtonsControls
+            autoPlay
+            animationType='slide'
+            animationEasingFunction
+            autoPlayInterval={7000}
             items={items}
             ref={(el) => (Carousel = el)}
             infinite
@@ -31,8 +67,8 @@ function Carousel() {
         />,
         // <nav>{items.map(navItem)}</nav>,
 
-        <button onClick={() => Carousel.slidePrev()}>Prev</button>,
-        <button onClick={() => Carousel.slideNext()}>Next</button>
+        <button className={styles.testBtn} onClick={() => Carousel.slidePrev()}><ImArrowLeft2/></button>,
+        <button className={styles.testBtn} onClick={() => Carousel.slideNext()}><ImArrowRight2 /></button>
     ];
 }
 
@@ -40,13 +76,13 @@ export default function Testimonials() {
     const carousel = Carousel()
     return (
         <div className={styles.container}>
-        { carousel[1]}
-        < div className = { styles.carousel } >
+            {carousel[1]}
+            < div className={styles.carousel} >
 
-            { carousel[0]}
+                {carousel[0]}
 
-        </div >
-        { carousel[2]}
+            </div >
+            {carousel[2]}
         </div>
     )
 }

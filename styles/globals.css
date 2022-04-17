@@ -84,3 +84,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* custom css start */
+
+.pageHeading {
+  font-size: 4rem;
+  color: #f8f8ff;
+}
