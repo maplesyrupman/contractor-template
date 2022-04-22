@@ -87,6 +87,10 @@ select {
 
 /* custom css start */
 
+.blue {
+  color: #191970 !important;
+}
+
 .pageHeading {
   font-size: 4rem;
   color: #f8f8ff;
