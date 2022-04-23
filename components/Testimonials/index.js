@@ -26,7 +26,7 @@ const testimonials = [
 
 const items = testimonials.map((test, i) => {
     return (
-        <div className={`item ${styles.testSlide}`} data-value={`${i}`}>
+        <div className={`item ${styles.testSlide}`} data-value={`${i}`} key={i}>
 
             <span className={styles.quote}>
                 <ImQuotesLeft />
@@ -64,25 +64,41 @@ function Carousel() {
                     items: 1
                 }
             }}
+            key='carousel'
         />,
         // <nav>{items.map(navItem)}</nav>,
 
-        <button className={styles.testBtn} onClick={() => Carousel.slidePrev()}><ImArrowLeft2/></button>,
-        <button className={styles.testBtn} onClick={() => Carousel.slideNext()}><ImArrowRight2 /></button>
+        <button className={styles.testBtn} onClick={() => Carousel.slidePrev()} key='prev'><ImArrowLeft2 /></button>,
+        <button className={styles.testBtn} onClick={() => Carousel.slideNext()} key='next'><ImArrowRight2 /></button>
     ];
 }
 
 export default function Testimonials() {
-    const carousel = Carousel()
     return (
         <div className={styles.container}>
-            {carousel[1]}
+                    <button className={styles.testBtn} onClick={() => Carousel.slidePrev()} key='prev'><ImArrowLeft2 /></button>
             < div className={styles.carousel} >
 
-                {carousel[0]}
+                <AliceCarousel
+                    mouseTracking
+                    disableButtonsControls
+                    autoPlay
+                    animationType='slide'
+                    animationEasingFunction
+                    autoPlayInterval={7000}
+                    items={items}
+                    ref={(el) => (Carousel = el)}
+                    infinite
+                    responsive={{
+                        0: {
+                            items: 1
+                        }
+                    }}
+                    key='carousel'
+                />
 
             </div >
-            {carousel[2]}
+            <button className={styles.testBtn} onClick={() => Carousel.slideNext()} key='next'><ImArrowRight2 /></button>
         </div>
     )
 }

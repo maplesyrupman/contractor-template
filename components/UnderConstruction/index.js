@@ -9,7 +9,7 @@ export default function UnderConstruction() {
       </Head>
       <div className='flex flex-col justify-center items-center pt-6'>
         <div className=''>
-          <Image src='/images/logo.png' width={500} height={250} />
+          <Image src='/images/logo.png' width={500} height={250} alt="blue and white grid"/>
         </div>
         <div className='p-4 '>
         <h1 className='text-3xl text-center'>

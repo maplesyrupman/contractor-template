@@ -12,7 +12,7 @@ export default function Home() {
       <section className={styles.heroWrapper}>
         <div className={styles.hero}>
           <div>
-            <Image src={'/images/hero-img-overlay.jpg'} layout='responsive' height={82} width={175} />
+            <Image src={'/images/hero-img-overlay.jpg'} layout='responsive' height={82} width={175} alt='finished kitchen'/>
           </div>
 
           <div className={styles.heroContent}>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
 
         <div className={styles.comResImg}>
-          <Image src='/images/home-middle.jpg' layout="responsive" width={245} height={328} />
+          <Image src='/images/home-middle.jpg' layout="responsive" width={245} height={328} alt='trades worker'/>
         </div>
 
       </section>
