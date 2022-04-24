@@ -1,10 +1,10 @@
 import Image from "next/image"
+import Link from "next/link"
 import Testimonials from '../components/Testimonials'
 
 import styles from './index.module.css'
 
 import Layout from "../components/Layout"
-import Button from '../components/Button'
 
 export default function Home() {
   return (
@@ -22,8 +22,12 @@ export default function Home() {
               <h1 className='pageHeading'>Build.</h1>
             </div>
             <div className={styles.heroBtns}>
-              <Button type={'link'} colour={'primary'} content='Get a Quote' size='small' />
-              <Button type={'link'} colour={'secondary'} content='View Our Projects' size='small' />
+              <Link href='/contact'>
+                <a className="btn btnSm bgOrange">Get a Quote</a>
+              </Link>
+              <Link href='/gallery'>
+                <a className="btn btnSm bgBlue">View Our Projects</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -39,7 +43,12 @@ export default function Home() {
             Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.
           </p>
           <div className={styles.aboutBtn}>
-            <Button type={'link'} colour={'secondary'} content='About Us' size='small' />
+            <Link href='/about'>
+              <a className='btn btnSm bgBlue'>
+                About Us
+              </a>
+            </Link>
+            {/* <Button type={'link'} colour={'secondary'} content='About Us' size='small' /> */}
           </div>
         </div>
       </section>
