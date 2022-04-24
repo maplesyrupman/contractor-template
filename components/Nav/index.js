@@ -46,9 +46,11 @@ export default function Nav({ home }) {
                             </Link>
                         </li>
                         <li>
-
-                            <Button type={'link'} colour={'primary'} content='Contact' size='large' />
-
+                            <Link href='/contact'>
+                                <a className={`bgOrange btn btnLg`}>
+                                    Contact
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className={styles.burger}>
@@ -66,22 +68,22 @@ export default function Nav({ home }) {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/about'>
                             <a className={styles.navLink}>About</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/services'>
                             <a className={styles.navLink}>Services</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/gallery'>
                             <a className={styles.navLink}>Gallery</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/contact'>
                             <a className={styles.navLink}>Contact</a>
                         </Link>
                     </li>

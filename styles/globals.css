@@ -87,8 +87,34 @@ select {
 
 /* custom css start */
 
+.btn {
+  border-radius: 5px;
+  padding: 10px 36px;
+  color: #f8f8ff;
+}
+
 .blue {
   color: #191970 !important;
+}
+
+.bgBlue {
+  background-color: #191970 !important;
+}
+
+.bgOrange {
+  background-color: #E57106 !important;
+}
+
+.bgLight {
+  background-color: #F0F0F0;
+}
+
+.btnSm {
+  font-size: 1.3rem;
+}
+
+.btnLg {
+  font-size: 1.7rem;
 }
 
 .pageHeading {

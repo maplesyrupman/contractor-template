@@ -1,10 +1,10 @@
 import styles from './button.module.css'
 
-export default function Button({colour, type, content, size}) {
+export default function Button({colour, content, size}) {
 
     return (
-        <button type={type} className={`${styles[colour]} ${styles.btn} ${styles[size]}`}>
+        <a className={`${styles[colour]} ${styles.btn} ${styles[size]}`}>
             {content}   
-        </button>
+        </a>
     )
 }
