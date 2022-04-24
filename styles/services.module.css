@@ -1,0 +1,6 @@
+.headingContainer {
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+    background: url('/public/images/services-banner-overlay.jpg') center center/cover no-repeat fixed;
+}

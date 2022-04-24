@@ -46,9 +46,9 @@ export default function Nav({ home }) {
                             </Link>
                         </li>
                         <li>
-                            <Link href='/contact'>
-                                <Button type={'link'} colour={'primary'} content='Contact' size='large' />
-                            </Link>
+
+                            <Button type={'link'} colour={'primary'} content='Contact' size='large' />
+
                         </li>
                     </ul>
                     <div className={styles.burger}>
