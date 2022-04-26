@@ -71,9 +71,12 @@ export default function Services() {
             </section>
             <section>
                 <section className={styles.servicesContainer}>
-                    {services.map(service => {
+                    {services.map((service, idx) => {
                         return (
-                            <div className={styles.serviceCardBody}>
+                            <div 
+                                className={styles.serviceCardBody }
+                                key={idx}
+                            >
                                 {service.icon}
                                 <h2 className={styles.serviceHeading}>{service.title}</h2>
                                 <p className={styles.serviceText}>{service.blurb}</p>

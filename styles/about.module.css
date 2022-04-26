@@ -51,6 +51,7 @@
     padding: 64px 110px;
     display: flex;
     gap: 132px;
+    align-items: center;
 }
 
 .articleImg {

@@ -70,6 +70,16 @@
     background-color: #ffffff;
 }
 
+.errorMsg {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.errorBorder {
+    border: 1px solid red;
+}
+
 
 
 @media (max-width: 810px) {

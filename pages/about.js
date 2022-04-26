@@ -31,20 +31,18 @@ export default function About() {
             <section className={styles.articleContainer}>
                 <div className={styles.articleCard}>
                     <div className={styles.articleImg}>
-
+                        <Image src='/images/article-thumb.jpg' layout='responsive' width={1033} height={1325} />
                     </div>
                     <div className={styles.articleInfo}>
                         <div>
-                            <h3 className={styles.articleTitle}>Article Title</h3>
-                            <p className={styles.articleDate}>Publisher Name 02/08/08</p>
+                            <h3 className={styles.articleTitle}>Tedesco Restorations</h3>
+                            <p className={styles.articleDate}>Canadian Business Journal</p>
                         </div>
                         <p className={styles.articleText}>
-                            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                        </p>
+                            Owner Domenic Tedesco has a degree from the University of Toronto, a background in Structural Engineering, and education in interior and exterior design. With twenty-six years of experience in the industry, he started Tedesco Restorations in 2006, focusing on serving the GTA market.  Tedesco Restorations specializes in commercial and residential spaces. Services offered include exteriors, renovation, roofing, foundation restoration, remodeling, bathrooms, and kitchens.                         </p>
                         <p className={styles.articleText}>
-                            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                        </p>
-                        <Link href='/'>
+                            Following his passion for client interaction and a personal touch in every job, Tedesco swayed to the home restoration industry. “You are changing people's lives, you are changing their homes, and you get to see the happy faces of your clients", says Tedesco. “That is why I ventured in the restoration industry. I love building stuff, and I love building something from nothing.”                         </p>
+                        <Link href='https://www.cbj.ca/tedesco_restorations/'>
                             <a className={styles.articleLink}>Read More</a>
                         </Link>
                     </div>
