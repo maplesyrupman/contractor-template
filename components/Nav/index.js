@@ -4,8 +4,6 @@ import { useState } from "react"
 
 import styles from './nav.module.css'
 
-import Button from "../Button"
-
 import { FiMenu, FiX } from "react-icons/fi"
 
 export default function Nav({ home }) {

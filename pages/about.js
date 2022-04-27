@@ -36,7 +36,7 @@ export default function About() {
             <section className={styles.articleContainer}>
                 <div className={styles.articleCard}>
                     <div className={styles.articleImg}>
-                        <Image src='/images/article-thumb.jpg' layout='responsive' width={1033} height={1325} />
+                        <Image src='/images/article-thumb.jpg' layout='responsive' width={1033} height={1325} alt='house' />
                     </div>
                     <div className={styles.articleInfo}>
                         <div>
