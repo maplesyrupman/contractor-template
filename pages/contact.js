@@ -60,8 +60,6 @@ export default function Contact() {
         } else {
             console.log('invalid form')
         }
-
-
     }
 
     return (
