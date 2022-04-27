@@ -20,7 +20,7 @@ export default function Nav({ home }) {
         <div>
             <nav className={styles.nav}>
                 <div className={styles.logoContainer}>
-                    <Image src={'/images/alt-logo.svg'} width={240} height={95} />
+                    <Image src={'/images/alt-logo.svg'} width={240} height={95} alt='logo'/>
                 </div>
 
                 <div className="flex items-center">

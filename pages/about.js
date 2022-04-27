@@ -6,6 +6,11 @@ import Layout from "../components/Layout"
 import styles from '../styles/about.module.css'
 
 export default function About() {
+
+    const articleParas = [
+        "Owner Domenic Tedesco has a degree from the University of Toronto, a background in Structural Engineering, and education in interior and exterior design. With twenty-six years of experience in the industry, he started Tedesco Restorations in 2006, focusing on serving the GTA market.  Tedesco Restorations specializes in commercial and residential spaces. Services offered include exteriors, renovation, roofing, foundation restoration, remodeling, bathrooms, and kitchens.",
+        "Following his passion for client interaction and a personal touch in every job, Tedesco swayed to the home restoration industry. \"You are changing people's lives, you are changing their homes, and you get to see the happy faces of your clients\", says Tedesco. \"That is why I ventured in the restoration industry. I love building stuff, and I love building something from nothing.\""
+    ]
     return (
         <Layout>
             <div className={styles.headingContainer} >
@@ -39,9 +44,11 @@ export default function About() {
                             <p className={styles.articleDate}>Canadian Business Journal</p>
                         </div>
                         <p className={styles.articleText}>
-                            Owner Domenic Tedesco has a degree from the University of Toronto, a background in Structural Engineering, and education in interior and exterior design. With twenty-six years of experience in the industry, he started Tedesco Restorations in 2006, focusing on serving the GTA market.  Tedesco Restorations specializes in commercial and residential spaces. Services offered include exteriors, renovation, roofing, foundation restoration, remodeling, bathrooms, and kitchens.                         </p>
+                            {articleParas[0]}
+                        </p>
                         <p className={styles.articleText}>
-                            Following his passion for client interaction and a personal touch in every job, Tedesco swayed to the home restoration industry. “You are changing people's lives, you are changing their homes, and you get to see the happy faces of your clients", says Tedesco. “That is why I ventured in the restoration industry. I love building stuff, and I love building something from nothing.”                         </p>
+                            {articleParas[1]}
+                        </p>
                         <Link href='https://www.cbj.ca/tedesco_restorations/'>
                             <a className={styles.articleLink}>Read More</a>
                         </Link>
