@@ -4,8 +4,6 @@ import axios from 'axios'
 import Layout from '../components/Layout'
 import styles from '../styles/contact.module.css'
 
-import validateForm from '../lib/validateForm'
-
 export default function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', phone: '', message: '' })
     const [nameErr, setNameErr] = useState(false)
@@ -17,16 +15,17 @@ export default function Contact() {
 
         switch (fieldName) {
             case 'name':
-                setFormState({ ...formState, name: value })
+                setFormState({ ...formState, name: value.trim() })
                 break
             case 'email':
-                setFormState({ ...formState, email: value })
+                setFormState({ ...formState, email: value.trim() })
+                e.target.value = value.trim()
                 break
             case 'phone':
-                setFormState({ ...formState, phone: value })
+                setFormState({ ...formState, phone: value.trim() })
                 break
             default:
-                setFormState({ ...formState, message: value })
+                setFormState({ ...formState, message: value.trim() })
         }
     }
 
@@ -126,6 +125,7 @@ export default function Contact() {
                             <textarea name='message'
                                 className={styles.fieldInput}
                                 onChange={updateFormState}
+                                
                             />
                         </div>
                         <div>
