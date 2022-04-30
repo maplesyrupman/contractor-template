@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import styles from '../styles/gallery.module.css'
+import Layout from "../../components/Layout";
+import styles from '../../styles/gallery.module.css'
 
 const thumbs = [1, 2, 3, 4, 5]
 
@@ -12,6 +12,9 @@ export default function Gallery() {
                 <h1 className={`pageHeading blue`}>
                     Gallery
                 </h1>
+                <p className={styles.headingPara}>
+                    Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                </p>
             </div>
             <div className={styles.galleryContainer}>
                 <div className={styles.gallery}>
@@ -27,6 +30,9 @@ export default function Gallery() {
                         )
                     })}
                 </div>
+            </div>
+            <div>
+
             </div>
         </Layout>
     )
