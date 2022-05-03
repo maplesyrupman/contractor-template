@@ -1,0 +1,10 @@
+.container {
+    
+}
+
+.gallery {
+    max-width: 1300px;
+    margin: 7rem auto;
+    background-color: #F0F0F0;
+    padding: 4rem;
+}

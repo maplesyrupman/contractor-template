@@ -1,10 +1,20 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout"
 import styles from '../../styles/gallery.module.css'
+import { getThumbData } from "../../lib/gallery"
 
-const thumbs = [1, 2, 3, 4, 5]
+const testThumbs = [1, 2, 3, 4, 5]
 
-export default function Gallery() {
+export async function getStaticProps() {
+    const thumbs = getThumbData()
+    return {
+        props: {
+            thumbs
+        }
+    }
+}
 
+export default function Gallery({thumbs}) {
+    
 
     return (
         <Layout>
@@ -18,21 +28,19 @@ export default function Gallery() {
             </div>
             <div className={styles.galleryContainer}>
                 <div className={styles.gallery}>
-                    {thumbs.map(thumb => {
+                    {testThumbs.map(thumb => {
                         return (
                             <div key={thumb} className={styles.projectCard}>
                                 <div className={styles.cardImg}>
                                     image
                                 </div>
-                                <h3>Project Desc.</h3>
-                                <a>View more</a>
+                                <div className={styles.projDesc}>
+                                    <h3>Description of Proj</h3>
+                                </div>
                             </div>
                         )
                     })}
                 </div>
-            </div>
-            <div>
-
             </div>
         </Layout>
     )

@@ -1,14 +1,15 @@
 import Layout from "../../components/Layout"
 import Slideshow from "../../components/Slideshow"
+import styles from '../../styles/proj.module.css'
 
-import { getAllProjectIds, getProjectImages } from "../../lib/gallery"
+import { getAllProjectIds, getProjectData } from "../../lib/gallery"
+import Link from "next/link"
 
 export async function getStaticProps({ params }) {
-    const imagePaths = getProjectImages(params.proj)
-    console.log('image paths',imagePaths)
+    const data = getProjectData(params.proj)
     return {
         props: {
-            imagePaths
+            ...data
         }
     }
 }
@@ -21,13 +22,20 @@ export async function getStaticPaths() {
     }
 }
 
-
-export default function Project({imagePaths}) {
-
+export default function Project({ imageCount, proj }) {
     return (
         <Layout>
-            <Slideshow imagePaths={imagePaths} />
-            <p>Helllo</p>
+            <div className={styles.container}>
+                <div className={styles.gallery}>
+                    <Link href='/gallery'>
+                        <a className="btn bgOrange">back</a>
+                    </Link>
+                    <Slideshow
+                        imageCount={imageCount}
+                        proj={proj}
+                    />
+                </div>
+            </div>
         </Layout>
     )
 }

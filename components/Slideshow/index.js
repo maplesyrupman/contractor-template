@@ -1,12 +1,62 @@
-import ImageGallery from "react-image-gallery"
-import react from "react"
+import { useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Thumbs } from "swiper"
 
-class Slideshow extends react.Component {
 
-    render() {
-        // return <ImageGallery items={this.props.imagePaths} />
-        return <h1>Hello there</h1>
-    }
+import "swiper/css"
+import "swiper/css/navigation"
+import 'swiper/css/thumbs'
+import styles from '../../styles/slideshow.module.css'
+import Image from "next/image"
+
+export default function Slideshow({ imageCount, proj }) {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null)
+    const imageNums = Array.from('x'.repeat(imageCount))
+
+    return (
+        <>
+            <Swiper
+                navigation={true}
+                modules={[Navigation, Thumbs]}
+                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                cssMode
+                className={styles.mainContainer}
+                loop
+            >
+
+                {imageNums.map((imgNum, idx) => {
+                    return (
+                        <SwiperSlide key={`${idx}-slide`} className={styles.mainSlide}>
+                                <div className={styles.mainImg}>
+                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='fixed' height={500} width={500} alt='hey' />
+                                </div>
+                        </SwiperSlide>
+                    )
+                })}
+
+            </Swiper>
+
+            <Swiper
+                modules={[Thumbs]}
+                watchSlidesProgress
+                onSwiper={setThumbsSwiper}
+                loop
+                
+                className={styles.thumbContainer}
+                slidesPerView={imageCount}
+                cssMode
+            >
+                {imageNums.map((imgNum, idx) => {
+                    return (
+                        <SwiperSlide key={`${idx}-slide`} className={styles.thumbSlide}>
+                                <div className={styles.thumbImg}>
+                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='fixed' height={500} width={500} alt='hey' />
+                                </div>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+
+        </>
+    );
 }
-
-export default Slideshow
