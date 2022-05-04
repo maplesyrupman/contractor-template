@@ -22,14 +22,20 @@ export async function getStaticPaths() {
     }
 }
 
-export default function Project({ imageCount, proj }) {
+export default function Project({ imageCount, proj, desc }) {
+
     return (
         <Layout>
             <div className={styles.container}>
                 <div className={styles.gallery}>
-                    <Link href='/gallery'>
-                        <a className="btn bgOrange">back</a>
-                    </Link>
+                    <div className={styles.heading}>
+                        <Link href='/gallery'>
+                            <a className={`btn bgOrange ${styles.backBtn}`}>back</a>
+                        </Link>
+                        <h1 className={styles.desc}>
+                            {desc}
+                        </h1>
+                    </div>
                     <Slideshow
                         imageCount={imageCount}
                         proj={proj}

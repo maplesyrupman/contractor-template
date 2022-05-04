@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 import Layout from "../../components/Layout"
 import styles from '../../styles/gallery.module.css'
 import { getThumbData } from "../../lib/gallery"
@@ -13,8 +15,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function Gallery({thumbs}) {
-    
+export default function Gallery({ thumbs }) {
 
     return (
         <Layout>
@@ -28,16 +29,19 @@ export default function Gallery({thumbs}) {
             </div>
             <div className={styles.galleryContainer}>
                 <div className={styles.gallery}>
-                    {testThumbs.map(thumb => {
+                    {thumbs.map((thumb, idx) => {
                         return (
-                            <div key={thumb} className={styles.projectCard}>
-                                <div className={styles.cardImg}>
-                                    image
+                            <Link href={`/gallery/${thumb.proj}`} key={`proj${idx}`} passHref>
+                                <div key={thumb} className={styles.projectCard}>
+                                    <div className={styles.cardImg}>
+                                        <Image src={`/projects/${thumb.proj}/proj${idx + 1}-0.jpg`} layout='responsive' width={300} height={300} alt='project image' />
+                                    </div>
+                                    <div className={styles.projDesc}>
+                                        <h3>{thumb.desc}</h3>
+                                    </div>
                                 </div>
-                                <div className={styles.projDesc}>
-                                    <h3>Description of Proj</h3>
-                                </div>
-                            </div>
+                            </Link>
+
                         )
                     })}
                 </div>

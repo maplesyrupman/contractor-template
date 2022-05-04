@@ -28,7 +28,7 @@ export default function Slideshow({ imageCount, proj }) {
                     return (
                         <SwiperSlide key={`${idx}-slide`} className={styles.mainSlide}>
                                 <div className={styles.mainImg}>
-                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='fixed' height={500} width={500} alt='hey' />
+                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='responsive' height={640} width={481} alt='hey' />
                                 </div>
                         </SwiperSlide>
                     )
@@ -43,14 +43,14 @@ export default function Slideshow({ imageCount, proj }) {
                 loop
                 
                 className={styles.thumbContainer}
-                slidesPerView={imageCount}
+                slidesPerView={2}
                 cssMode
             >
                 {imageNums.map((imgNum, idx) => {
                     return (
                         <SwiperSlide key={`${idx}-slide`} className={styles.thumbSlide}>
                                 <div className={styles.thumbImg}>
-                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='fixed' height={500} width={500} alt='hey' />
+                                    <Image src={`/projects/${proj}/${proj}-${idx}.jpg`} layout='responsive' height={640} width={481} alt='hey' />
                                 </div>
                         </SwiperSlide>
                     )

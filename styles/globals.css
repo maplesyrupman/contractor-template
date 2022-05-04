@@ -121,3 +121,11 @@ select {
   font-size: 4rem;
   color: #f8f8ff;
 }
+
+.swiper-button-prev {
+  color: #E57106 !important;
+}
+
+.swiper-button-next {
+  color: #E57106 !important;
+}

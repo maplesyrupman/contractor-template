@@ -24,7 +24,10 @@
 
 }
 
-
+.heroImg {
+    height: calc(100vh - 136px);
+    overflow-y: hidden;
+}
 
 .heroBtns {
     width: 80%;

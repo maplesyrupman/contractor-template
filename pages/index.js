@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <section className={styles.heroWrapper}>
         <div className={styles.hero}>
-          <div>
+          <div className={styles.heroImg}>
             <Image src={'/images/hero-img-overlay.jpg'} layout='responsive' height={82} width={175} alt='finished kitchen'/>
           </div>
 
