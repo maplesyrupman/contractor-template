@@ -17,7 +17,7 @@
 }
 
 .aboutContainer {
-    padding: 7rem 3rem;
+    padding: 7rem 250px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -34,7 +34,6 @@
 }
 
 .aboutText {
-    width: 80%;
     font-size: 20px;
     line-height: 30px;
     display: flex;
@@ -43,7 +42,7 @@
 }
 
 .articleContainer {
-    padding: 3rem;
+    padding: 0 250px 7rem 250px;
 }
 
 .articleCard {
@@ -95,7 +94,7 @@
 .communityContainer {
     background-color:#191970;
     color: white;
-    padding: 78px 68px;
+    padding: 78px 250px;
     display: flex;
     gap: 128px;
 }

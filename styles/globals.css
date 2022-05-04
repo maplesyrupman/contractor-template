@@ -23,12 +23,15 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6
 p,
 figure,
 blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -120,6 +123,9 @@ select {
 .pageHeading {
   font-size: 4rem;
   color: #f8f8ff;
+  font-family: eloquent-jf-pro, serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .swiper-button-prev {

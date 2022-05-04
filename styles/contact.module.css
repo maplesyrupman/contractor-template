@@ -1,8 +1,8 @@
 .infoContainer {
     background-color: #191970;
     color: #F0F0F0;
-    padding: 65px 180px;
-    margin: 65px 0;
+    padding: 65px 250px;
+    margin: 65px 0 200px 0;
 }
 
 .infoTextContainer {
@@ -40,7 +40,7 @@
 
 .formContainer {
     position: absolute;
-    right: 10%;
+    right: 250px;
     top: -10%;
     background-color: #F0F0F0;
     height: 120%;
