@@ -50,3 +50,23 @@
     height: min-content;
     border-radius: 5px;
 }
+
+@media (max-width: 810px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .projectCard {
+        width: 100%;
+    }
+
+    .headingPara {
+        padding: 0 2rem;
+    }
+
+    .headingContainer {
+        padding: 0;
+    }
+}

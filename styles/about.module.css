@@ -136,12 +136,12 @@
     }
 
     .aboutHeading {
-        font-size: 4rem;
+        font-size: 3.5rem;
         left: unset;
     }
 
     .aboutContainer {
-        padding: 42px 0;
+        padding: 42px 2rem;
         text-align: center;
     }
 
