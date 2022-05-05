@@ -17,9 +17,9 @@ export default function Home() {
 
           <div className={styles.heroContent}>
             <div className={styles.heroTextContainer}>
-              <h1 className='pageHeading'>Restoration.</h1>
-              <h1 className='pageHeading'>Design.</h1>
-              <h1 className='pageHeading'>Build.</h1>
+              <h1 className={`pageHeading ${styles.heroText}`}>Restoration.</h1>
+              <h1 className={`pageHeading ${styles.heroText}`}>Design.</h1>
+              <h1 className={`pageHeading ${styles.heroText}`}>Build.</h1>
             </div>
             <div className={styles.heroBtns}>
               <Link href='/contact'>
