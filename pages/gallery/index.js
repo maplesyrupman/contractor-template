@@ -41,7 +41,6 @@ export default function Gallery({ thumbs }) {
                                     </div>
                                 </div>
                             </Link>
-
                         )
                     })}
                 </div>

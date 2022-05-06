@@ -53,4 +53,12 @@
     .testBtn {
         display: none;
     }
+
+    .testSlide {
+        padding: 3rem;
+    }
+
+    .name {
+        text-align: center;
+    }
 }

@@ -121,12 +121,12 @@ select {
 }
 
 .pageHeading {
-  font-size: 4rem;
+  font-size: 3.9rem;
   color: #f8f8ff;
   font-family: eloquent-jf-pro, serif !important;
   font-weight: 400;
   font-style: normal;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .swiper-button-prev {

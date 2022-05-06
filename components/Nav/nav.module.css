@@ -37,10 +37,7 @@
 @media (max-width: 810px) {
 
     .nav {
-        padding-top: 10px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-bottom: 5px;
+        padding: 10px 1rem 5px 1rem;
         height: 92px;
     }
 
