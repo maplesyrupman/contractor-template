@@ -126,6 +126,7 @@ select {
   font-family: eloquent-jf-pro, serif !important;
   font-weight: 400;
   font-style: normal;
+  white-space: nowrap;
 }
 
 .swiper-button-prev {

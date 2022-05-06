@@ -138,7 +138,6 @@
     .heroImg {
         height: calc(100vh - 92px);
         width: 110%;
-        
     }
 
     .heroContent {
@@ -148,7 +147,7 @@
     .heroText {
         font-size: 3.5rem;
         text-align: center;
-        line-height: 3.3rem;
+        line-height: 3.9rem;
     }
 
     .heroTextContainer {
@@ -167,7 +166,7 @@
     }
 
     .aboutContainer {
-        padding: 7rem 5rem;
+        padding: 7rem 3rem;
     }
 
     .heading {

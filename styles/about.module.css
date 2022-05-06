@@ -138,10 +138,11 @@
     .aboutHeading {
         font-size: 3.5rem;
         left: unset;
+        white-space: nowrap;
     }
 
     .aboutContainer {
-        padding: 42px 2rem;
+        padding: 4rem 3rem;
         text-align: center;
     }
 
@@ -159,7 +160,7 @@
     .communityContainer {
         flex-direction: column-reverse;
         gap: 2rem;
-        padding: 36px;
+        padding: 2rem 3rem;
     }
 
     .communityHeading {
