@@ -23,25 +23,25 @@ export default function About() {
                 <div className={styles.aboutText}>
                     <h2 className={`${styles.aboutHeading} pageHeading`}>Since 1995</h2>
                     <p>
-                        Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                        Domenic Tedesco has over 30 years of experience in the construction industry. He founded Tedesco Restoration in 1995, and has recently rebranded to Tedesco Group to more accurately portray the variety of services him and his team provide.
                     </p>
                     <p>
-                        Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                        “At Tedesco Restoration, we understand the importance of preserving history. Our team of experts has years of experience in restoring old homes and commercial buildings, ensuring that each project is completed with care.
                     </p>
                     <p>
-                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                        Our passion for restoration shines through in every project we undertake, from home restoration to commercial projects. We take pride in our work, and we are committed to delivering the best possible results for our clients.”
                     </p>
                 </div>
             </section>
             <section className={styles.articleContainer}>
                 <div className={styles.articleCard}>
-                    <div className={styles.articleImg}>
-                        <Image src='/images/article-thumb.jpg' layout='responsive' width={1033} height={1325} alt='house' />
-                    </div>
                     <div className={styles.articleInfo}>
                         <div>
                             <h3 className={styles.articleTitle}>Tedesco Restorations</h3>
-                            <p className={styles.articleDate}>Canadian Business Journal</p>
+                            <p className={styles.articlePub}>Canadian Business Journal</p>
+                        </div>
+                        <div className={styles.articleImg}>
+                            <Image src='/images/article-thumb.jpg' layout='responsive' width={1033} height={1325} alt='house' />
                         </div>
                         <p className={styles.articleText}>
                             {articleParas[0]}
@@ -58,14 +58,18 @@ export default function About() {
             <section className={styles.communityContainer}>
                 <div className={styles.communityText}>
                     <h3 className={`${styles.communityHeading} ${styles.comHeadLg}`}>Giving Back to the Community</h3>
-                    <p>
-                        Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                    <div className={styles.communityImg}>
+                        <Image src='/images/owen-racing.jpg' layout='responsive' width={293} height={326} alt='Owen holding a trophey and helmet' />
+                    </div>
+                    <p className={styles.communityPara}>
+                        It with great excitement that we continue to charge forward in the 2022 championship chase with Tedesco Group as our primary partner. Domenic and his team of skilled trades have been the backbone to our fine tuned race program. Without individuals like Domenic it would be absolutely impossible to accomplish such success so early on in the season.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt.
+                    <p className={styles.communityPara}>
+                        Tedesco Group is proudly represented by 10 year old Owen Solomon of Oakville On. Owen competes in MIKA Briggs Cadet , MIKA Jr Lite as well as WRKC Jr Lite. He is so lucky and honored to represent a company that cares about the future of not only our community but those within it. From our family, team and other partners , Thank You for  your support and dedication to push us into the winner circle together!
                     </p>
-                </div>
-                <div className={styles.communityImg}>
+                    <p className={styles.communityPara}>
+                        Tiffany Lessard <br /> Stirton Lessard Racing <br /><span className={styles.italic}>2021 Rookie of the Year</span>
+                    </p>
 
                 </div>
                 <h3 className={`${styles.communityHeading} ${styles.comHeadSm}`}>Giving Back to the Community</h3>

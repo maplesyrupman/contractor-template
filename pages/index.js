@@ -39,7 +39,7 @@ export default function Home() {
             Delivering Exceptional Services Since 1995
           </h2>
           <p className={styles.text}>
-            Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.
+          Tedesco Restoration has been delivering exceptional services since 1995. From home restoration to commercial projects, Tedesco Restoration takes pride in completing every project with the utmost attention to detail.
           </p>
           <div className={styles.aboutBtn}>
             <Link href='/about'>
@@ -58,19 +58,8 @@ export default function Home() {
             Experienced in Commercial <br />
             and Residential Projects
           </h2>
-          <p className={`${styles.text} ${styles.light} ${styles.left}`}>
-            One tasty titbit of information.
-          </p>
-          <p className={`${styles.text} ${styles.light} ${styles.left}`}>
-            Another tasty titbit of information with a longer explanation
-            of what it means
-          </p>
-          <p className={`${styles.text} ${styles.light} ${styles.left}`}>
-            One tasty titbit of information.
-          </p>
-          <p className={`${styles.text} ${styles.light} ${styles.left}`}>
-            Another tasty titbit of information with a longer explanation
-            of what it means
+          <p className={`${styles.text} ${styles.light} ${styles.left} ${styles.comResText}`}>
+          We deliver exceptional services for both residential and commercial projects. Our company has vast experience with everything from restoring homes built a hundred years ago, to outfitting a commercial building with the newest equipment and technology. 
           </p>
         </div>
 

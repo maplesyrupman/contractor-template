@@ -40,7 +40,7 @@
 }
 
 .aboutContainer {
-    padding: 10rem 17rem;
+    padding: 7% 17rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +82,7 @@
 
 .comResTextContainer {
     background-color: #191970;
-    padding-left: 250px;
+    padding-left: 12%;
     padding-top: 7rem;
     padding-bottom: 7rem;
     width: 100%;
@@ -91,9 +91,13 @@
     margin-bottom: 3rem;
 }
 
+.comResText {
+    width: 50%;
+}
+
 .comResImg {
     position: absolute;
-    right: 250px;
+    right: 12%;
     width: 455px;
 }
 
@@ -114,7 +118,22 @@
     font-weight: 700;
 }
 
+@media (max-width: 1440px) {
+    .aboutContainer {
+        padding: 3% 7%;
+    }
 
+    .comResTextContainer {
+        padding: 3rem 0;
+        padding-left: 6%;
+        height: unset;
+    }
+
+    .comResImg {
+        width: 355px;
+        right: 6%;
+    }
+}
 
 @media (max-width: 810px) {
 
@@ -137,7 +156,7 @@
 
     .heroImg {
         height: calc(100vh - 92px);
-        width: 110%;
+        width: 70%;
     }
 
     .heroContent {
@@ -184,6 +203,10 @@
         height: unset;
     }
 
+    .comResText {
+        width: unset;
+    }
+
     .comResImg {
         position: unset;
         width: 85%;
@@ -195,5 +218,11 @@
         padding: 1rem;
         padding-top: 7rem;
         padding-bottom: 7rem;
+    }
+}
+
+@media (max-width: 546px) {
+    .heroImg {
+        width: 110%;
     }
 }

@@ -4,8 +4,6 @@ import Layout from "../../components/Layout"
 import styles from '../../styles/gallery.module.css'
 import { getThumbData } from "../../lib/gallery"
 
-const testThumbs = [1, 2, 3, 4, 5]
-
 export async function getStaticProps() {
     const thumbs = getThumbData()
     return {
@@ -24,7 +22,7 @@ export default function Gallery({ thumbs }) {
                     Gallery
                 </h1>
                 <p className={styles.headingPara}>
-                    Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Here you can get a glimpse of the quality and attention to detail we provide for each one of our residential or commercial projects. Browse through the gallery of just a few of our immaculately restored homes and buildings.
                 </p>
             </div>
             <div className={styles.galleryContainer}>
