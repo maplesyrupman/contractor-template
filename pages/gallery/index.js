@@ -28,8 +28,9 @@ export default function Gallery({ thumbs }) {
             <div className={styles.galleryContainer}>
                 <div className={styles.gallery}>
                     {thumbs.map((thumb, idx) => {
+                        if ([0, 4].includes(idx)) return 
                         return (
-                            <Link href={`/gallery/${thumb.proj}`} key={`proj${idx}`} passHref>
+                            // <Link href={`/gallery/${thumb.proj}`} key={`proj${idx}`} passHref>
                                 <div key={thumb} className={styles.projectCard}>
                                     <div className={styles.cardImg}>
                                         <Image src={`/projects/${thumb.proj}/proj${idx + 1}-0.jpg`} layout='responsive' width={300} height={300} alt='project image' />
@@ -38,7 +39,7 @@ export default function Gallery({ thumbs }) {
                                         <h3>{thumb.desc}</h3>
                                     </div>
                                 </div>
-                            </Link>
+                            // </Link>
                         )
                     })}
                 </div>
