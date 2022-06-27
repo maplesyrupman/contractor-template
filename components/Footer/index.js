@@ -48,14 +48,14 @@ export default function Footer() {
                         <h6 className={styles.heading}>Contact</h6>
                         <ul>
                             <li>
-                                <Link href='/'>
+                                <Link href='tel:+14162946408'>
                                     <a className={styles.link}>
                                         (416) 294-6408
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='mailto:dom@tedescogroup.ca'>
                                     <a className={styles.link}>
                                         admin@tedescogroup.ca
                                     </a>
@@ -73,16 +73,21 @@ export default function Footer() {
             </div>
             <div className={styles.divider}></div>
             <section className={styles.footerLegal}>
-                <div className={styles.legalLinks}>
+                {/* <div className={styles.legalLinks}>
                     <Link href='/'>
                         <a className={styles.link}>Privacy Policy</a>
                     </Link>
                     <Link href='/'>
                         <a className={styles.link}>Terms of Service</a>
                     </Link>
-                </div>
+                </div> */}
                 <div className={styles.text}>
-                    ©2022 SMU Design | RWI Labs
+                ©2022 {' '}
+                    <Link href='https://www.rwilabs.io'>
+                        <a className={styles.link}>
+                        RWI Labs
+                        </a>
+                    </Link>
                 </div>
             </section>
         </div>

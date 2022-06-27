@@ -9,7 +9,7 @@
     padding: 16px 80px;
     background-color: #161616;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .linkContainer {
@@ -58,11 +58,6 @@
         padding: 0 50px;
     }
 
-    .footerLegal {
-        display: flex;
-        flex-direction: column;
-    }
-
     .legalLinks {
         align-items: center;
         flex-direction: column;
@@ -72,6 +67,8 @@
     
     .text {
         text-align: center;
+        /* display: flex;
+        align-items: center; */
     }
 
     .linkContainer {
