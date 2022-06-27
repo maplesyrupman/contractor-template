@@ -50,7 +50,7 @@ export default function Footer() {
                             <li>
                                 <Link href='/'>
                                     <a className={styles.link}>
-                                        (416) 123-4567
+                                        (416) 294-6408
                                     </a>
                                 </Link>
                             </li>
@@ -61,12 +61,12 @@ export default function Footer() {
                                     </a>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p className={styles.text}>
                                     123 Main St. Toronto, ON
                                     G7H3X5
                                 </p>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </section>

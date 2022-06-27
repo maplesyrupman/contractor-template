@@ -74,19 +74,8 @@ export default function Contact() {
                     <div className={styles.infoTextContainer}>
                         <div>
                             <h3 className={styles.heading}>Domenic Tedesco - President</h3>
+                            <p className={styles.text}>Phone: 416-294-6408</p>
                             <p className={styles.text}>Email: dom@tedescogroup.ca</p>
-                        </div>
-                        <div>
-                            <h3 className={styles.heading}>Eleanor Lastname - Secretary</h3>
-                            <p className={styles.text}>Phone: 416-123-4567</p>
-                            <p className={styles.text}>Email: admin@tedescogroup.ca</p>
-                        </div>
-                        <div>
-                            <h3 className={styles.heading}>Address</h3>
-                            <p className={styles.text}>123 Someplace Blvd. Toronto,
-                                <br />
-                                ON Canada M1G 2L9
-                            </p>
                         </div>
                     </div>
                 </div>
