@@ -39,7 +39,7 @@ export default function Home() {
             Delivering Exceptional Services Since 1995
           </h2>
           <p className={styles.text}>
-          Tedesco Restoration has been delivering exceptional services since 1995. From home restoration to commercial projects, Tedesco Restoration takes pride in completing every project with the utmost attention to detail.
+          Tedesco Group has been delivering exceptional services since 1995. From home restoration to commercial projects, Tedesco Group takes pride in completing every project with the utmost attention to detail.
           </p>
           <div className={styles.aboutBtn}>
             <Link href='/about'>
