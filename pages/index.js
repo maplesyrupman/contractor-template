@@ -69,15 +69,15 @@ export default function Home() {
 
       </section>
 
-      <section className={styles.testsContainer}>
-        {/* <div>
-          <Image src='/images/testimonialBG-overlay.jpg' layout='responsive' width={3} height={2} />
-        </div> */}
+      {/* <section className={styles.testsContainer}>
+        <div>
+          <Image src='/images/testimonialBG-overlay.jpg' layout='responsive' width={3} height={2} alt='testimonials' />
+        </div>
         <h2 className={`${styles.heading} ${styles.testHeading}`}>
           Testimonials
         </h2>
         <Testimonials />
-      </section>
+      </section> */}
 
     </Layout>
   )
